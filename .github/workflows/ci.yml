@@ -24,10 +24,10 @@ jobs:
         cache: maven
     
     - name: Compile the project
-      run: mvn-B clean compile
+      run: mvn -B clean compile
     
     - name: Run unit tests
-      run: mvn-B test
+      run: mvn -B test
     
     - name: Package the application
       run: mvn -B package -DskipTests
